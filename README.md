@@ -1,5 +1,7 @@
 # @ungap/degap
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ungap/degap.svg)](https://greenkeeper.io/)
+
 The ideal [rollup-plugin-includepaths](https://www.npmjs.com/package/rollup-plugin-includepaths) `@ungap` companion.
 
 This module provides all native based fallbacks for any `@ungap/...` module that might not be needed for modern engines.
