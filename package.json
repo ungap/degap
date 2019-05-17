@@ -1,0 +1,8 @@
+{
+  "name": "@ungap/degap",
+  "version": "0.0.0",
+  "description": "The ideal rollup-plugin-includepaths @ungap companion.",
+  "keywords": ["no", "polyfill", "ungap", "native", "map"],
+  "author": "Andrea Giammarchi",
+  "license": "ISC"
+}
