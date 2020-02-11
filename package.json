@@ -1,6 +1,6 @@
 {
   "name": "@ungap/degap",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "The ideal rollup-plugin-includepaths @ungap companion.",
   "keywords": [
     "no",
