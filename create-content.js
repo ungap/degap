@@ -3,8 +3,12 @@ const xhtml = 'http://www.w3.org/1999/xhtml';
 
 const create = element => document.createElementNS(xhtml, element);
 
-const createContent = (markup, type) =>
-                        (type === 'svg' ? createSVG : createHTML)(markup);
+const createContent = (markup, type, normalize) => {
+  const content = (type === 'svg' ? createSVG : createHTML)(markup);
+  if (normalize)
+    content.normalize();
+  return content;
+};
 
 const createHTML = html => {
   const template = create('template');
