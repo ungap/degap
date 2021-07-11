@@ -1,7 +1,6 @@
-const svg = 'http://www.w3.org/2000/svg';
-const xhtml = 'http://www.w3.org/1999/xhtml';
+const w3 = 'http://www.w3.org/';
 
-const create = element => document.createElementNS(xhtml, element);
+const create = element => document.createElementNS(w3 + '1999/xhtml', element);
 
 const createContent = (markup, type) =>
                         (type === 'svg' ? createSVG : createHTML)(markup);
@@ -12,10 +11,10 @@ const createHTML = html => {
   return template.content;
 };
 
-const createSVG = xml => {
+const createSVG = svg => {
   const {content} = create('template');
   const template = create('div');
-  template.innerHTML = '<svg xmlns="' + svg + '">' + xml + '</svg>';
+  template.innerHTML = '<svg xmlns="' + w3 + '2000/svg">' + svg + '</svg>';
   const {childNodes} = template.firstChild;
   let {length} = childNodes;
   while (length--)
